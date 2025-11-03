@@ -22,6 +22,28 @@ make build
 make clean
 ```
 
+## Assumptions and Features Not Implemented
+
+### **Assumptions**
+- The elevator moves **one floor per simulation step** (no travel time per distance or acceleration).  
+- Each request represents a **single passenger** (no batching of multiple people from the same floor).  
+- The elevator **immediately picks up or drops off** when reaching a floor (no door-open delays).  
+- Input data is assumed to be **valid** (floors are non-negative integers, and times are sorted or reasonably spaced).  
+- There is only **one elevator**, and it always starts at the given `startFloor` at time `0`.  
+- Floors are assumed to be sequential integers (no basement or skipped levels).  
+
+---
+
+### **Features Not Implemented**
+- **Multiple elevators** — the system currently handles one elevator only.  
+- **Passenger capacity limits** — the elevator can accept unlimited requests.  
+- **Door timing or delays** — stops occur instantly when the elevator reaches a target floor.  
+- **Energy or efficiency optimization** — direction switches are based solely on remaining stops, not energy minimization.  
+- **Out-of-order request handling** — requests are processed at or after their time value; if two arrive simultaneously, they’re added in input order.  
+
+---
+
+
 ---
 
 ## Input Format
