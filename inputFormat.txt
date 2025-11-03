@@ -1,0 +1,5 @@
+startFloor <int>
+numRequests <int>
+<time> <from> <to>
+<time> <from> <to>
+...

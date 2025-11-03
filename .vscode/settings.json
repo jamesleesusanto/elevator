@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.txt": "markdown_latex_combined",
+        "iostream": "cpp"
+    }
+}
